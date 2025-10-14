@@ -1,0 +1,82 @@
+.content-wrapper {
+    gap: 48px;
+    padding: 128px 64px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    align-self: stretch;
+    height: fit-content;
+}
+
+.text {
+    text-align: center;
+    width: 85%;
+}
+
+.plates {
+    width: 100%;
+    display: flex;
+    gap: 32px;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+
+
+}
+
+.plate {
+    position: relative;
+    height: 300px;
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid #e6e6e6;
+    padding: 32px;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 16px;
+    overflow: hidden;
+    
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.list-item {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 8px;
+    width: fit-content;
+
+}
+
+.point {
+    height: 8px;
+    width: 8px;
+    background: black;
+}
+
+.plate-title {
+    font-size: 30px;
+}
+
+.plate-text {
+    font-size: 15px;
+}
+
+.plate img {
+    height: 100%;
+    z-index: -1;
+}
