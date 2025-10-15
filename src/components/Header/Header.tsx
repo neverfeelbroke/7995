@@ -79,14 +79,14 @@ export default function Header() {
                     <a className={styles['mobile-nav-link']} href="#about-us" onClick={handleScrollTo('about-us')}>
                         About us
                     </a>
+                    <a className={styles['mobile-nav-link']} href="#origin" onClick={handleScrollTo('origin')}>
+                        Origin
+                    </a>
                     <a className={styles['mobile-nav-link']} href="#partnership" onClick={handleScrollTo('partnership')}>
                         Partnership
                     </a>
                     <a className={styles['mobile-nav-link']} href="#investments" onClick={handleScrollTo('investments')}>
                         Investments
-                    </a>
-                    <a className={styles['mobile-nav-link']} href="#faq" onClick={handleScrollTo('faq')}>
-                        FAQ
                     </a>
                     <a className={styles['mobile-contact']} href="#contact-us" onClick={handleScrollTo('contact-us')}>
                         Cooperation
