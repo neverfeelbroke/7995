@@ -37,7 +37,7 @@ export default function InvestmentsSlide() {
                             </div>
                             <div className={styles['list-item']}>
                                 <div className={styles['point']}></div>
-                                <span className={styles['plate-text']}>iGaming B2B SaaS</span>
+                                <span className={styles['plate-text']}>Content Providers</span>
                             </div>
                         </div>
                     </div>

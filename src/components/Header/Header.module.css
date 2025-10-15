@@ -57,6 +57,38 @@
     font-weight: 700;
     font-size: 12px;
     color: white;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    transform: translateY(0);
+    cursor: pointer;
+}
+
+.contact:hover {
+    background: #333;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.contact:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.4s;
+}
+
+.contact:hover::before {
+    left: 100%;
 }
 
 /* Burger menu button */
@@ -145,6 +177,37 @@
     color: white;
     text-decoration: none;
     width: fit-content;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    transform: translateY(0);
+}
+
+.mobile-contact:hover {
+    background: #333;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.mobile-contact:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.mobile-contact::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.4s;
+}
+
+.mobile-contact:hover::before {
+    left: 100%;
 }
 
 /* Mobile styles */
