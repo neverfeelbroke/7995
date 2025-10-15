@@ -8,11 +8,27 @@
     align-items: center;
     align-self: stretch;
     height: fit-content;
+    background-image: url('/bg2.png');
+    background-size: 100% 100%;
+    /* растянуть и по ширине, и по высоте */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
 }
 
 .text {
     text-align: center;
     width: 85%;
+    font-size: 14px;
 }
 
 .plates {
@@ -21,28 +37,37 @@
     justify-content: space-between;
     align-items: center;
     height: fit-content;
-
-
 }
 
 .plate {
     position: relative;
     height: 330px;
     width: 32%;
+    background: white;
     border-radius: 12px;
     border: 1px solid #e6e6e6;
     padding: 32px;
     display: flex;
     flex-direction: column;
     align-items: start;
-    justify-content: start;
-    gap: 16px;
+    justify-content: space-between;
     overflow: hidden;
+}
 
+.text-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: left;
+    gap: 16px;
 }
 
 .plate-title {
     font-size: 30px;
+    background: linear-gradient(90deg, #000 0%, #8c8c8c 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .plate-text {
@@ -50,10 +75,86 @@
 }
 
 .plate img {
-    height: 65%;
-    position: absolute;
-    bottom: -15%;
-    left: -10%;
-    rotate: 20deg;
-    z-index: -1;
+    height: 50px;
+}
+
+/* Tablet styles */
+@media (max-width: 955px) {
+    .title {
+        width: 50%;
+    }
+    .content-wrapper {
+        padding: 60px 32px;
+        gap: 32px;
+        align-items: flex-start;
+    }
+    
+    .text {
+        width: 100%;
+        font-size: 13px;
+        text-align: left;
+    }
+    
+    .plates {
+        width: 100%;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .plate {
+        width: 100%;
+        height: auto;
+        padding: 24px;
+    }
+    
+    .plate-title {
+        font-size: 24px;
+    }
+    
+    .plate-text {
+        font-size: 13px;
+    }
+    
+    .plate img {
+        height: 40px;
+    }
+}
+
+/* Mobile styles */
+@media (max-width: 480px) {
+    .content-wrapper {
+        padding: 40px 16px;
+        gap: 24px;
+    }
+    
+    .text {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+    
+    .plates {
+        gap: 16px;
+    }
+    
+    .plate {
+        padding: 20px;
+        border-radius: 8px;
+    }
+    
+    .text-wrapper {
+        gap: 12px;
+    }
+    
+    .plate-title {
+        font-size: 20px;
+    }
+    
+    .plate-text {
+        font-size: 12px;
+        line-height: 1.4;
+    }
+    
+    .plate img {
+        height: 32px;
+    }
 }

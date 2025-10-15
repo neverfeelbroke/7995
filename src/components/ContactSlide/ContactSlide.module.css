@@ -8,6 +8,14 @@
     color: black;
 }
 
+.logo {
+    width: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
 .left {
     width: 50%;
     position: relative;
@@ -164,4 +172,110 @@
 .submit:hover {
     transition: 0.3s;
     background: #161616;
+}
+
+/* Tablet styles */
+@media (max-width: 955px) {
+    .content-wrapper {
+        flex-direction: column;
+        padding: 60px 32px;
+        gap: 32px;
+    }
+    
+    .title {
+        width: 50%;
+    }
+    
+    .logo {
+        display: none;
+    }
+    
+    .left {
+        width: 100%;
+        padding: 0;
+        gap: 20px;
+    }
+    
+    .form-title {
+        font-size: 13px;
+        text-align: left;
+    }
+    
+    .form-wrapper {
+        width: 100%;
+        padding: 0;
+        gap: 16px;
+    }
+    
+    .form-row {
+        flex-direction: column;
+        gap: 16px;
+    }
+    
+    .form-label {
+        font-size: 13px;
+    }
+    
+    .field {
+        font-size: 13px;
+        height: 40px;
+        padding: 10px 14px;
+    }
+    
+    .textarea-field {
+        min-height: 100px;
+        padding: 14px;
+    }
+    
+    .submit {
+        font-size: 14px;
+        height: 40px;
+        padding: 10px 20px;
+    }
+}
+
+/* Mobile styles */
+@media (max-width: 480px) {
+    .content-wrapper {
+        padding: 40px 16px;
+        gap: 24px;
+    }
+    
+    .left {
+        gap: 16px;
+    }
+    
+    .form-title {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+    
+    .form-wrapper {
+        gap: 12px;
+    }
+    
+    .form-row {
+        gap: 12px;
+    }
+    
+    .form-label {
+        font-size: 12px;
+    }
+    
+    .field {
+        font-size: 12px;
+        height: 36px;
+        padding: 8px 12px;
+    }
+    
+    .textarea-field {
+        min-height: 80px;
+        padding: 12px;
+    }
+    
+    .submit {
+        font-size: 12px;
+        height: 36px;
+        padding: 8px 16px;
+    }
 }

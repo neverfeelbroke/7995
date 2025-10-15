@@ -60,6 +60,7 @@ export default function ContactSlide() {
 
     return (
         <section id='contact-us' className={styles['content-wrapper']}>
+            <img src="/big-logo.svg" className={styles['logo']}/>
             <div className={styles['left']}>
                 <img src="/contact-us.svg" className={styles['title']}/>
                 <p className={styles['form-title']}>We invest in scalable iGaming ventures and technologies that redefine the industry.<br />Our role goes beyond capital - we provide infrastructure, insight, and alignment.</p>

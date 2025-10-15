@@ -35,14 +35,8 @@ export default function FaqSlide() {
 
     return (
         <section id='faq' className={styles['content-wrapper']}>
-            <div className={styles['left']}>
-                <img src="/faq.svg" className={styles['title']}/>
-                <video autoPlay muted loop playsInline className={styles['video']}>
-                    <source src="/faq.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                </video>
-            </div>
             <div className={styles['right']}>
+                <img src="/faq.svg" className={styles['title']}/>
                 <div className={styles['faq-list']}>
                     {faqItems.map((item, index) => (
                         <div key={index} className={styles['faq-item']}>
@@ -60,6 +54,12 @@ export default function FaqSlide() {
                         </div>
                     ))}
                 </div>
+            </div>
+            <div className={styles['left']}>
+                <video autoPlay muted loop playsInline className={styles['video']}>
+                    <source src="/faq.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
             </div>
         </section>
     )

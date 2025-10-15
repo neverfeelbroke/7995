@@ -9,7 +9,7 @@ export default function InvestmentsSlide() {
             <div className={`${styles['plates']} `}>
                 <div className={`${styles['plate']} `}>
                     <div className={styles['left']}>
-                        <p className={styles['plate-title']}>Focus Areas</p>
+                        <img src="/focus.svg" className={styles['plate-title']}/>
                         <div className={styles['list']}>
                             <div className={styles['list-item']}>
                                 <div className={styles['point']}></div>
@@ -29,11 +29,11 @@ export default function InvestmentsSlide() {
                             </div>
                         </div>
                     </div>
-                    <img  className={styles['icon']} src="/focus.png" alt="stats"/>
+                    <img  className={styles['icon']} src="/focusI.svg" alt="stats"/>
                 </div>
                 <div className={`${styles['plate']} `}>
                     <div className={styles['left']}>
-                        <p className={styles['plate-title']}>What Our Partners Gain</p>
+                        <img src="/gain.svg" className={styles['plate-title']}/>
                         <div className={styles['list']}>
                             <div className={styles['list-item']}>
                                 <div className={styles['point']}></div>
@@ -49,7 +49,7 @@ export default function InvestmentsSlide() {
                             </div>
                         </div>
                     </div>
-                    <img  className={styles['icon']} src="/gain.png" alt="stats"/>
+                    <img  className={styles['icon']} src="/gainI.svg" alt="stats"/>
                 </div>
             </div>
         </section>

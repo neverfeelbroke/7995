@@ -28,14 +28,14 @@
 
 .plate {
     position: relative;
-    height: 300px;
+    height: 230px;
     width: 100%;
     border-radius: 12px;
     border: 1px solid #e6e6e6;
     padding: 32px;
     display: flex;
     align-items: start;
-    justify-content: space-between;
+    justify-content: start;
     gap: 16px;
     overflow: hidden;
     
@@ -44,7 +44,9 @@
 .left {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    align-items: start;
+    justify-content: start;
+    gap: 32px;
 }
 
 .list {
@@ -69,14 +71,104 @@
 }
 
 .plate-title {
-    font-size: 30px;
+    height: 20px;
 }
 
 .plate-text {
     font-size: 15px;
 }
 
-.plate img {
+.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
     height: 100%;
     z-index: -1;
+}
+
+/* Tablet styles */
+@media (max-width: 955px) {
+    .title {
+        width: 50%;
+    }
+    
+    .content-wrapper {
+        padding: 60px 32px;
+        gap: 32px;
+        align-items: flex-start;
+    }
+    
+    .text {
+        width: 100%;
+        font-size: 13px;
+        text-align: left;
+    }
+    
+    .plates {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .plate {
+        width: 100%;
+        height: auto;
+        padding: 24px;
+    }
+    
+    .plate-text {
+        font-size: 13px;
+    }
+    
+    .icon {
+        height: 80%;
+    }
+}
+
+/* Mobile styles */
+@media (max-width: 480px) {
+    .content-wrapper {
+        padding: 40px 16px;
+        gap: 24px;
+    }
+    
+    .text {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+    
+    .plates {
+        gap: 16px;
+    }
+    
+    .plate {
+        padding: 20px;
+        border-radius: 8px;
+        gap: 12px;
+    }
+    
+    .left {
+        gap: 20px;
+    }
+    
+    .list {
+        gap: 6px;
+    }
+    
+    .plate-title {
+        height: 16px;
+    }
+    
+    .plate-text {
+        font-size: 12px;
+        line-height: 1.4;
+    }
+    
+    .point {
+        height: 6px;
+        width: 6px;
+    }
+    
+    .icon {
+        height: 100%;
+    }
 }

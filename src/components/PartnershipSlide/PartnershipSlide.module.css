@@ -8,8 +8,14 @@
     align-items: center;
     align-self: stretch;
     height: fit-content;
-    background-color: black;
-    color: white;
+    color: black;
+}
+
+.planet {
+    position: absolute;
+    top: 0px;
+    left: -100px;
+    z-index: -1;
 }
 
 .text {
@@ -29,23 +35,22 @@
 }
 
 .plate {
-    height: 180;
+    height: 190px;
     border-radius: 20px;
-    background-color: #161616;
-    border: 1px solid rgb(54, 54, 54);
+    border: 1px solid #CCC;
+    background: #FFF;
     padding: 32px;
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: space-between;
-    gap: 16px;
+    gap: 48px;
     overflow: hidden;
 
 }
 
 .first {
-    background: linear-gradient(90deg, #101010 0%, #161616 100%);
-    flex: 1.5;
+    flex: 1;
 }
 
 .second {
@@ -61,10 +66,11 @@
 }
 
 .plate-text {
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .ecosystem {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -79,33 +85,231 @@
     display: flex;
     align-items: flex-start;
     gap: 16px;
+    width: 100%;
 }
 
 .partner-plate {
+    cursor: pointer;
+    position: relative;
     display: flex;
-    width: 250px;
-    height: 73px;
-    padding: 20px;
-    justify-content: space-between;
-    align-items: center;
+    height: 160px;
+    padding: 16px;
+    justify-content: center;
+    
+    background-size:cover;
+    /* растянуть и по ширине, и по высоте */
+    background-repeat: no-repeat;
+    background-position: center;
+    align-items: end;
     border-radius: 20px;
     border: 1px solid rgb(54, 54, 54);
-    background: rgba(255, 255, 255, 0.05);
+}
+
+.partner-plate img {
+    position: absolute;
+    height: 60px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bluff {
+    background-image: url('/bluff.png');
+    flex: 1;
+}
+
+.bb {
+    background-image: url('/bb.png');
+    flex: 1;
+}
+
+.reboost {
+    background-image: url('/reboost.png');
+    flex: 1;
+}
+
+.partner-plate span {
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
 }
 
 .partner-logo {
     height: 80%;
 }
 
-@keyframes blink {
-    0%, 100% {
-        opacity: 1;
+/* Tablet styles */
+@media (max-width: 1050px) {
+    
+    .content-wrapper {
+        padding: 60px 32px;
+        gap: 32px;
+        align-items: flex-start;
     }
-    50% {
-        opacity: 0;
+    
+    .text {
+        text-align: left;
+        font-size: 13px;
+    }
+    
+    .plates {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .plate {
+        width: 100%;
+        height: auto;
+        padding: 24px;
+        gap: 24px;
+    }
+    
+    .plate-text {
+        font-size: 13px;
+    }
+
+    .ecosystem {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 16px;
+    }
+    
+    .ecosystem p {
+        font-size: 30px;
+    }
+    
+    .partner-plates {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .partner-plate {
+        width: 250px;
+        height: 160px;
+    }
+    
+    .title {
+        width: 60%;
+    }
+
+    .partner-plate img {
+        height: 60px;
     }
 }
 
-.online {
-    animation: blink 2s ease-in-out infinite;
+
+@media (max-width: 750px) {
+    .bluff {
+        background-image: url('/bluff.png');
+        width: 160px;
+        flex: none;
+    }
+
+    .bb {
+        background-image: url('/bb.png');
+        width: 160px;
+        flex: none;
+    }
+
+    .reboost {
+        background-image: url('/reboost.png');
+        width: 160px;
+        flex: none;
+    }
+    .partner-plate img {
+        height: 50px;
+    }
+
+    .partner-plate span {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    
+    .bluff {
+        background-image: url('/bluff.png');
+        height: 120px;
+        width: 120px;
+        flex: none;
+    }
+
+    .bb {
+        background-image: url('/bb.png');
+        height: 120px;
+        width: 120px;
+        flex: none;
+    }
+
+    .reboost {
+        background-image: url('/reboost.png');
+        height: 120px;
+        width: 120px;
+        flex: none;
+    }
+
+    .partner-plate img {
+        height: 40px;
+    }
+}
+
+@media (max-width: 500px) {
+    .partner-plate img {
+        height: 30px;
+    }
+    .bluff {
+        background-image: url('/bluff.png');
+        height: 100px;
+        width: 100px;
+        flex: none;
+    }
+
+    .bb {
+        background-image: url('/bb.png');
+        height: 100px;
+        width: 100px;
+        flex: none;
+    }
+
+    .reboost {
+        background-image: url('/reboost.png');
+        height: 100px;
+        width: 100px;
+        flex: none;
+    }
+
+    .partner-plate span {
+        display: none;
+    }
+}
+
+@media (max-width: 400px) {
+    .partner-plate span {
+        display: none;
+    }
+    .partner-plate img {
+        height: 30px;
+    }
+
+    .bluff {
+        background-image: url('/bluff.png');
+        height: 80px;
+        width: 80px;
+        flex: none;
+    }
+
+    .bb {
+        background-image: url('/bb.png');
+        height: 80px;
+        width: 80px;
+        flex: none;
+    }
+
+    .reboost {
+        background-image: url('/reboost.png');
+        height: 80px;
+        width: 80px;
+        flex: none;
+    }
 }
