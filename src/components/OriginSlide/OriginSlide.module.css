@@ -3,9 +3,8 @@
     padding: 128px 64px;
     position: relative;
     display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
+    justify-content: space-between;
+    align-items: start;
     align-self: stretch;
     height: fit-content;
     background-image: url('/bg2.png');
@@ -32,17 +31,53 @@
 }
 
 .plates {
-    width: 85%;
+    width: 70%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    gap: 16px;
+    align-items: end;
     height: fit-content;
+}
+
+.left {
+    flex: 1;
+    
+}
+
+
+
+.right {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    flex: 1;
+}
+
+.left .plate {
+    height: 400px;
+}
+
+.left .plate img {
+    left: -10%;
+    bottom: -10%;
+    height: 70%;
+}
+
+.right .plate {
+    height: 191px;
+}
+
+.right .plate img {
+    right: 0%;
+    bottom: 12.5%;
+    height: 70%;
 }
 
 .plate {
     position: relative;
-    height: 330px;
-    width: 32%;
+    width: 100%;
     background: white;
     border-radius: 12px;
     border: 1px solid #e6e6e6;
@@ -75,36 +110,53 @@
 }
 
 .plate img {
+    position: absolute;
     height: 50px;
 }
 
 /* Tablet styles */
 @media (max-width: 955px) {
     .title {
-        width: 40%;
-    }
-    .content-wrapper {
-        padding: 60px 32px;
-        gap: 32px;
-        align-items: flex-start;
+        width: 25%;
+        align-self: flex-start;
     }
     
-    .text {
-        width: 100%;
-        font-size: 13px;
-        text-align: left;
+    .content-wrapper {
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        padding: 60px 32px;
+        gap: 32px;
     }
     
     .plates {
         width: 100%;
         flex-direction: column;
         gap: 20px;
+        align-items: stretch;
     }
     
-    .plate {
+    .left, .right {
+        flex: none;
         width: 100%;
+    }
+    
+    .right {
+        height: auto;
+        gap: 20px;
+    }
+    
+    .left .plate, .right .plate {
         height: auto;
         padding: 24px;
+    }
+    
+    .left .plate img, .right .plate img {
+        position: relative;
+        height: 40px;
+        left: auto;
+        right: auto;
+        bottom: auto;
     }
     
     .plate-title {
@@ -113,10 +165,6 @@
     
     .plate-text {
         font-size: 13px;
-    }
-    
-    .plate img {
-        height: 40px;
     }
 }
 
@@ -127,18 +175,17 @@
         gap: 24px;
     }
     
-    .text {
-        font-size: 12px;
-        line-height: 1.5;
-    }
-    
     .plates {
         gap: 16px;
     }
     
-    .plate {
+    .left .plate, .right .plate {
         padding: 20px;
         border-radius: 8px;
+    }
+    
+    .left .plate img, .right .plate img {
+        height: 32px;
     }
     
     .text-wrapper {
@@ -152,9 +199,5 @@
     .plate-text {
         font-size: 12px;
         line-height: 1.4;
-    }
-    
-    .plate img {
-        height: 32px;
     }
 }

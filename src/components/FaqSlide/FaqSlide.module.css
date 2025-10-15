@@ -10,7 +10,7 @@
 .title {
     z-index: 5;
     position: relative;
-    height: 48px;
+    width: 20%;
     
 }
 
@@ -109,7 +109,7 @@
         gap: 32px;
         align-items: flex-start;
     }
-    
+
     
     .left {
         position: absolute;

@@ -17,15 +17,27 @@ export default function InvestmentsSlide() {
                             </div>
                             <div className={styles['list-item']}>
                                 <div className={styles['point']}></div>
-                                <span className={styles['plate-text']}>Affiliate networks</span>
+                                <span className={styles['plate-text']}>Affiliate Businesses</span>
                             </div>
                             <div className={styles['list-item']}>
                                 <div className={styles['point']}></div>
-                                <span className={styles['plate-text']}>Crypto/Blockchain</span>
+                                <span className={styles['plate-text']}>Ad Tech / Mar Tech</span>
                             </div>
                             <div className={styles['list-item']}>
                                 <div className={styles['point']}></div>
-                                <span className={styles['plate-text']}>Emerging markets</span>
+                                <span className={styles['plate-text']}>Payments Solutions</span>
+                            </div>
+                            <div className={styles['list-item']}>
+                                <div className={styles['point']}></div>
+                                <span className={styles['plate-text']}>iGaming B2B SaaS</span>
+                            </div>
+                            <div className={styles['list-item']}>
+                                <div className={styles['point']}></div>
+                                <span className={styles['plate-text']}>Betting Syndicates</span>
+                            </div>
+                            <div className={styles['list-item']}>
+                                <div className={styles['point']}></div>
+                                <span className={styles['plate-text']}>iGaming B2B SaaS</span>
                             </div>
                         </div>
                     </div>

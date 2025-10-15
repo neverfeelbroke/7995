@@ -7,6 +7,7 @@ import InvestmentsSlide from "@/components/InvestmentsSlide/InvestmentsSlide";
 import FaqSlide from "@/components/FaqSlide/FaqSlide";
 import ContactSlide from "@/components/ContactSlide/ContactSlide";
 import Footer from "@/components/Footer/Footer";
+import OriginSlide from "@/components/OriginSlide/OriginSlide";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Header/>
       <TitleSlide/>
       <AboutSlide/>
+      <OriginSlide/>
       <PartnershipSlide/>
       <InvestmentsSlide/>
       <FaqSlide/>

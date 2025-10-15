@@ -28,7 +28,7 @@
 
 .plate {
     position: relative;
-    height: 230px;
+    height: 290px;
     width: 100%;
     border-radius: 12px;
     border: 1px solid #e6e6e6;
@@ -89,7 +89,7 @@
 /* Tablet styles */
 @media (max-width: 955px) {
     .title {
-        width: 50%;
+        width: 40%;
     }
     
     .content-wrapper {
