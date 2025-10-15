@@ -166,10 +166,26 @@
     .plate-text {
         font-size: 13px;
     }
+
+    .plate {
+        height: fit-content;
+        padding: 20px;
+        border-radius: 8px;
+        justify-content: start;
+        gap: 32;
+    }
 }
 
 /* Mobile styles */
 @media (max-width: 480px) {
+    .plate {
+        height: fit-content;
+        padding: 20px;
+        border-radius: 8px;
+        justify-content: start;
+        gap: 32;
+    }
+
     .content-wrapper {
         padding: 40px 16px;
         gap: 24px;

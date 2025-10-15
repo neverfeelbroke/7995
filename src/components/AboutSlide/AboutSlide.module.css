@@ -118,6 +118,14 @@
     .plate img {
         height: 40px;
     }
+    
+    .plate {
+        height: fit-content;
+        padding: 20px;
+        border-radius: 8px;
+        justify-content: start;
+        gap: 32;
+    }
 }
 
 /* Mobile styles */
@@ -137,8 +145,11 @@
     }
     
     .plate {
+        height: fit-content;
         padding: 20px;
         border-radius: 8px;
+        justify-content: start;
+        gap: 32;
     }
     
     .text-wrapper {

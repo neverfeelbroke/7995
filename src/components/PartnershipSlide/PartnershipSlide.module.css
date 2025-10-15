@@ -171,12 +171,12 @@
     .ecosystem {
         display: flex;
         flex-direction: column;
-        align-items: start;
-        gap: 16px;
+        align-items: center;
+        gap: 32px;
     }
     
     .ecosystem p {
-        font-size: 30px;
+        font-size: 20px;
     }
     
     .partner-plates {
@@ -227,7 +227,7 @@
 }
 
 @media (max-width: 600px) {
-    
+
     .bluff {
         background-image: url('/bluff.png');
         height: 120px;
