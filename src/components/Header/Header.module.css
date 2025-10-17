@@ -40,15 +40,40 @@
 
 .nav-link {
     font-size: 14px;
-    min-width: 70px;
-    text-align: center
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 8px 0;
+    display: inline-block;
+}
+
+.nav-link:hover {
+    color: #333;
+    transform: translateY(-1px);
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #000, #333);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+    width: 100%;
 }
 
 .contact {
     height: 60%;
     width: fit-content;
     padding: 8px 16px;
-    border-radius: 10px 10px 0 10px;
+    border-radius: 10px 10px 10px 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -161,6 +186,16 @@
     text-decoration: none;
     padding: 12px 0;
     border-bottom: 1px solid #E6E6E6;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.mobile-nav-link:hover {
+    color: #333;
+    transform: translateX(5px);
+    background: rgba(0, 0, 0, 0.02);
+    border-radius: 5px;
+    padding-left: 5px;
 }
 
 .mobile-contact {

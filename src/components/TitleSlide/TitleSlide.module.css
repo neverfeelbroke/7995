@@ -84,6 +84,41 @@
     gap: 8px;
     justify-content: center;
     align-items: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.action-wrapper button:hover {
+    transform: scale(1.02);
+}
+
+.action-wrapper button img {
+    transition: transform 0.5s ease-in-out;
+}
+
+.action-wrapper button:hover img {
+    animation: spin 1s ease-in-out;
+}
+
+.action-wrapper button:not(:hover) img {
+    animation: spin-reverse 0.5s ease-in-out;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin-reverse {
+    from {
+        transform: rotate(360deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
 }
 
 @media (max-width: 650px) {

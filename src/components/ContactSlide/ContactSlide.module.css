@@ -12,7 +12,8 @@
     width: 80%;
     position: absolute;
     bottom: 0;
-    right: 0;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: -1;
 }
 
@@ -133,7 +134,7 @@
 }
 
 .field:focus {
-    border-color: #aaa;
+    border-color: #89eee1;
 }
 
 .field-error {
