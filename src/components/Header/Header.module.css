@@ -201,7 +201,7 @@
 .mobile-contact {
     margin-top: 32px;
     padding: 12px 24px;
-    border-radius: 10px 10px 0 10px;
+    border-radius: 10px 10px 10px 10px;
     display: flex;
     align-items: center;
     justify-content: center;
