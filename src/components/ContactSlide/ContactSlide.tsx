@@ -159,7 +159,7 @@ export default function ContactSlide() {
                 >
                     <div className={styles['form-row']}>
                         <div className={styles['form-group']}>
-                            <label className={styles['form-label']}>Name</label>
+                            <label className={styles['form-label']}>Name*</label>
                             <input
                                 className={`${styles.field} ${tempErrors.name ? styles['field-error'] : ''} ${isLoading ? styles['field-loading'] : ''}`}
                                 type="text"
@@ -179,7 +179,7 @@ export default function ContactSlide() {
                     </div>
 
                     <div className={styles['form-group']}>
-                        <label className={styles['form-label']}>Email</label>
+                        <label className={styles['form-label']}>Email*</label>
                         <input
                             className={`${styles.field} ${tempErrors.email ? styles['field-error'] : ''} ${isLoading ? styles['field-loading'] : ''}`}
                             type="text"
@@ -189,7 +189,7 @@ export default function ContactSlide() {
                     </div>
 
                     <div className={styles['form-group']}>
-                        <label className={styles['form-label']}>Subject</label>
+                        <label className={styles['form-label']}>Subject*</label>
                         <input
                             className={`${styles.field} ${tempErrors.subject ? styles['field-error'] : ''} ${isLoading ? styles['field-loading'] : ''}`}
                             type="text"
@@ -199,7 +199,7 @@ export default function ContactSlide() {
                     </div>
 
                     <div className={styles['form-group']}>
-                        <label className={styles['form-label']}>Message <span style={{ color: '#999', fontWeight: '400' }}>(min. 10 characters)</span></label>
+                        <label className={styles['form-label']}>Message* <span style={{ color: '#999', fontWeight: '400' }}>(min. 10 characters)</span></label>
                         <textarea
                             className={`${styles.field} ${styles['textarea-field']} ${tempErrors.message ? styles['field-error'] : ''} ${isLoading ? styles['field-loading'] : ''}`}
                             {...register("message")}
