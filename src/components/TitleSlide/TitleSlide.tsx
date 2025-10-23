@@ -24,7 +24,7 @@ export default function TitleSlide() {
             </video>
             {/* <img src="/bg.png" alt="" className={styles['bg']}/> */}
             <div className={styles['action-wrapper']}>
-                <p>7995 - is a private iGaming investment vehicle and IT company focused on creating a long lasting synergetic partnerships within out ecosystem</p>
+                <p>7995 - is a private iGaming investment vehicle and IT company focused on creating a long lasting synergetic partnerships within our ecosystem</p>
                 <button onClick={handleScrollTo('about-us')}>
                     <img src="/plus.svg" alt="" />
                     Get Started
