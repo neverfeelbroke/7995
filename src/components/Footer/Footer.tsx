@@ -24,7 +24,7 @@ export default function Footer() {
                 <a className={styles['logo']} href="#" onClick={handleScrollTo()}>
                     <img  className={styles['infinity']} src="/logo.svg" alt="infinity" />
                 </a>
-                <span className={styles['copyright']}>All Rights Reserved | 7995.io | Copyright © 2025</span>
+                <span className={styles['copyright']}>All Rights Reserved | 7995.io | Copyright © 2025<br/>Hi Steaks Entertainment Limited 16068</span>
             </div>
 
             <div className={styles['nav-links']}>
