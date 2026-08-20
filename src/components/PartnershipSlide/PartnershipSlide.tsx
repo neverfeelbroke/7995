@@ -22,23 +22,6 @@ export default function PartnershipSlide() {
                     <p className={styles['plate-text']}>Joint development, shared strategy, and aligned success metrics.</p>
                 </div>
             </div>
-            <div className={`${styles['ecosystem']}`}>
-                <p>Our Ecosystem</p>
-                <div className={`${styles['partner-plates']}`}>
-                    <a href="https://bluff.io" target="_blank" rel="noopener noreferrer" className={cn(styles['partner-plate'], styles['bluff'])}>
-                        <img src="/bluff-logo.png" alt="" />
-                        <span>Bluff.io</span>
-                    </a>
-                    <a href="https://betbolt.com" target="_blank" rel="noopener noreferrer" className={cn(styles['partner-plate'], styles['bb'])}>
-                        <img src="/bb-logo.png" alt="" />
-                        <span>BetBolt.com</span>
-                    </a>
-                    <a href="https://reboostmedia.com" target="_blank" rel="noopener noreferrer" className={cn(styles['partner-plate'], styles['reboost'])}>
-                        <img src="/reboost-logo.png" alt="" />
-                        <span>Reboost Media</span>
-                    </a>
-                </div>
-            </div>
         </section>
     )
 }

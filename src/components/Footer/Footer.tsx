@@ -5,6 +5,8 @@ import cn from 'classnames';
 
 export default function Footer() {
 
+    const currentYear = new Date().getFullYear()
+
     // Функция плавного скролла к секции
     const handleScrollTo = (id?: string) => (e: React.MouseEvent) => {
         e.preventDefault();
@@ -24,7 +26,7 @@ export default function Footer() {
                 <a className={styles['logo']} href="#" onClick={handleScrollTo()}>
                     <img  className={styles['infinity']} src="/logo.svg" alt="infinity" />
                 </a>
-                <span className={styles['copyright']}>All Rights Reserved | 7995.io | Copyright © 2025<br/>Hi Steaks Entertainment Limited 16068</span>
+                <span className={styles['copyright']}>All Rights Reserved | 7995.io | Copyright © {currentYear}<br/>Hi Steaks Entertainment Limited 16068</span>
             </div>
 
             <div className={styles['nav-links']}>
